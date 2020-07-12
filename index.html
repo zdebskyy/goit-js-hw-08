@@ -8,34 +8,36 @@
     <title>Document</title>
 </head>
 <body>
+       <!-- В этот список добавляй элементы галереи -->
+       <ul class="gallery js-gallery"></ul>
+
+       <!--
+         Модальное окно для полноразмерного изображения
+         Для того чтобы открыть, необходимо добавить на div.lightbox CSS-класс is-open
+       -->
+       <div class="lightbox js-lightbox">
+         <div class="lightbox__overlay"></div>
    
+         <div class="lightbox__content">
+           <img class="lightbox__image" src="" alt="" />
+         </div>
+   
+         <button
+           type="button"
+           class="lightbox__button"
+           data-action="close-lightbox"
+         ></button>
+       </div> 
 
 <!-- ------------------------------------------------------------------ -->
 
-
-
-
-
-
-
-
-
-
-
-
-<!-- ------------------------------------------------------------------ -->
-
-
-
-
-
-
-
-
-
-<!-- ------------------------------------------------------------------ -->
-
-
+ <!-- <div id="controls">
+    <input class ="input "type="number" min="0" max="100" step="1" />
+    <button type="button" data-action="render">Создать</button>
+    <button type="button" data-action="destroy">Очистить</button>
+  </div>
+  
+  <div id="boxes"></div> -->
 
 
 
@@ -44,66 +46,13 @@
 
 <!-- ------------------------------------------------------------------ -->
 
-<style>
-.lighter{
-            width: 50px;
-            padding: 10px;
-            height: 175px;
-            border: 2px solid #000;
-            margin: 0 auto;
-            margin-top: 100px;
-            border-radius: 6px;
-        }
-        .lighters {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            margin: 0 auto;
-            margin-bottom: 10px;
-            border: 1px solid black;
-        }
-        .controls{
-            width: 200px;
-            margin: 0 auto;
-            margin-top: 50px;
-        }
-        #red.red-light{
-            background-color: red;
-        }
-        #yellow.yellow-light{
-            background-color: yellow;
-        }
-        #green.green-light{
-            background-color: green;
-        }
-
-</style>
-
-<!-- <div class="lighter">
-  <div class="lighters" id ="red"></div>
-  <div class="lighters" id ="yellow"></div>
-  <div class="lighters" id ="green"></div>
-</div>
-<div class="controls">
-  <button data-condition="on">On</button>
-  <button data-condition="off">Off</button>
-  <button data-condition="random">Random</button>
-</div> -->
 
 
-
-
-
-    <!-- <script src="./js/task-1.js" type="module"></script>  -->
-    <!-- <script src="./js/task-2.js" type="module"></script> -->
-    <!-- <script src="./js/task-3.js" type="module"></script>  -->
-    <!-- <script src="./js/task-4.js" type="module"></script> -->
-    <!-- <script src="./js/task-5.js" type="module"></script> -->
-    <!-- <script src="./js/task-6.js" type="module"></script> -->
-    <!-- <script src="./js/task-7.js" type="module"></script> -->
-    <!-- <script src="./js/task-8.js" type="module"></script>  -->
-    <!-- <script src="./js/task-9.js" type="module"></script>  -->
+    <script src="./js/task-1.js" type="module"></script> 
+    <script src="./js/gallery-items.js" type="module"></script>
+    <!-- <script src="./js/task-2.js" type="module"></script>  -->
     <!-- <script src="./js/task-10.js" type="module"></script>  -->
-    <!-- <script src="./js/task-11.js" type="module"></script>  -->
+  
 </body>
 </html>
+
